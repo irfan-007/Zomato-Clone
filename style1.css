@@ -1,0 +1,185 @@
+*{
+    margin: 0%;
+    border: 0ch;
+    outline: 0ch;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+/*  -----   hero section  ----- */
+
+
+.hero_section{
+    background: url("./images/heroSectionBackground.png");
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav_menu{
+    display: flex;
+    gap: 1.8rem;
+}
+
+.user_icon{
+    width: 30px;
+    aspect-ratio:1/1;
+    border-radius: 100%;
+    border: 1px solid white;
+    display: none;
+    align-items: center;
+     justify-content: center;
+}
+
+.hero_section_container{
+    display: flex;
+    gap: 1.6rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(60vh-60px);
+    padding-top: 3.5rem;
+    
+}
+
+.hero_section_logo{
+    max-width: 14rem;
+}
+
+.logo_description{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hero_input_continer{
+    width: auto;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 0.5rem;
+    
+}
+.input_location{
+    padding: 5px;
+    width: 35%;
+    border-right: 2px solid gray;
+}
+.input_search{
+    padding: 5px;
+    width: 65%;
+    border: 0ch;
+    
+}
+ .inputs,.location_icon,.search_icon{
+    color: rgb(210, 74, 131);
+    background: white;
+    outline: 0px;
+}
+
+.search_icon{
+    color: rgb(74, 71, 71);
+} 
+
+
+/*  -----   we offer-section  ----- */
+
+.container{
+    margin: 3rem auto;
+    width: 95%;
+}
+
+.we_offer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.we_offer_card{
+    width: 18rem;
+    height: 17rem;
+    background: white;
+    padding: .5rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 1s ease;
+    border: 1px solid transparent;
+
+}
+
+.we_offer_card:hover{
+    transition: all 0.8s ease;
+    transform: scale(1.03);
+    box-shadow: 5px 5px 10px #575454;
+    cursor: pointer;
+    border: 1px solid rgb(132, 127, 127);
+    /* background: yellowgreen; */
+    
+
+}
+
+.we_offer_card img{
+    width: 15rem;
+    object-position: center;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+    border-radius: 8px;
+}
+
+
+
+
+
+@media screen and (max-width:750px){
+    .user_icon{
+        display: flex;
+    }
+    .link{
+        display: none;
+    }
+    .hero_section{
+        max-height: 80vh;
+    }
+    .navbar{
+        justify-content: space-between;
+        padding: .7rem;
+    }
+    
+    .hero_input_continer{
+        display: grid;
+        grid-template-columns: 1rem 1fr;
+        grid-template-rows: 1rem 1fr;
+        text-align: center;
+        background: white;
+        gap: 10px;
+    }
+    .input_location{
+        border: 0ch;
+        width: 100%;
+    }
+    .input_search{
+        width: 100%;
+        border-top: 2px solid gray;
+    }
+}
+
