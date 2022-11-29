@@ -209,6 +209,192 @@
 .overlay:hover{
     background: rgba(239, 177, 95, 0.126);
 }
+
+
+.get_the_app{
+    margin: 0ch;
+    width: 100%;
+    margin-top: 10rem;
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    background: #f8c9c952;
+   
+}
+.get_the_app .right{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.get_the_app .right h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: rgb(28, 28, 28);
+}
+.get_the_app .right h3{
+    font-weight: 300;
+    color: rgb(28, 28, 28);
+    font-size: 16px;
+}
+.get_the_app .right p{
+    color: #878585;
+    font-weight: 300;
+}
+.get_the_app .left img{
+    width: 19rem;
+}
+.download_from{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.download_from img{
+    width: 9rem;
+    cursor:url("./images/cursor.png"),pointer;
+}
+.buttons_container{
+    display: flex;
+    gap: 3rem;
+    font-size: 1rem;
+    font-weight: 300;
+
+}
+.buttons_container input{
+    height: 15px;
+    width: 20px;
+    
+}
+.input_field{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.input_field .share{
+    background: #e94757;
+    border-radius: 5px;
+    color: white;
+    width: auto;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 320;
+}
+.input_field .share:hover{
+    background: #ff3045;
+    cursor: pointer;
+
+}
+.input_field .email{
+    border: 1px solid rgb(172, 161, 161);
+    border-radius: .6rem;
+    padding: 1rem;
+    font-size: 17px;
+}
+
+
+
+.footer{
+    padding:0rem 15%;
+}
+.footer_section1 > img{
+    width: 9rem;
+}
+.footer_section1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.footer .navigation_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer .link_container img{
+    width: 8rem;
+    cursor: pointer;
+}
+.footer .link_container a{
+    text-decoration: none;
+    color: #878585;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: .4rem;
+    word-spacing: 3px;
+    
+}
+.footer .link_container a:hover{
+    color: #202020;
+}
+.footer .link_container h5{
+    font-weight: 420;
+    letter-spacing: 2px;
+    margin-bottom: .6rem;
+    font-size: 14px;
+}
+.footer .link_container{
+    display: flex;
+    flex-direction: column;
+}
+.footer .section1_button_container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+}
+.footer .section1_button_container button{
+    border: 1px solid gray;
+    padding: .5rem 0rem;
+    width: 7.6rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .section1_button_container .mini_globe , .indian_flag{
+    width: 22px;
+    height: 19px;
+    margin-right: 8px;
+}
+.footer_social_links{
+    gap: .5rem;
+}
+.footer_social_links .social_icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+}
+.footer_social_links .social_icons i{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 5px solid black;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+
+}
+
+.desclimer{
+    color: #878585;
+    font-size: 14px;
+    font-weight: 300;
+}
 /* ####################################################
 ################[      PHONE      ]##################
 ################################################# */
@@ -243,6 +429,16 @@
     .input_search{
         width: 100%;
         border-top: 2px solid gray;
+    }
+    .get_the_app .left{
+        display: none;
+    }
+    .footer .footer_social_links{
+        display: none;
+    }
+    .footer .section1_button_container button{
+        width: auto;
+        padding: 8px;
     }
 }
 
