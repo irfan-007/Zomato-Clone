@@ -1,0 +1,444 @@
+*{
+    margin: 0%;
+    border: 0ch;
+    outline: 0ch;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+/*  -----   hero section  ----- */
+
+
+.hero_section{
+    background: url("./images/heroSectionBackground.png");
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav_menu{
+    display: flex;
+    gap: 1.8rem;
+}
+
+.user_icon{
+    width: 30px;
+    aspect-ratio:1/1;
+    border-radius: 100%;
+    border: 1px solid white;
+    display: none;
+    align-items: center;
+     justify-content: center;
+}
+
+.hero_section_container{
+    display: flex;
+    gap: 1.6rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(60vh-60px);
+    padding-top: 3.5rem;
+    
+}
+
+.hero_section_logo{
+    max-width: 14rem;
+}
+
+.logo_description{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hero_input_continer{
+    width: auto;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 0.5rem;
+    
+}
+.input_location{
+    padding: 5px;
+    width: 35%;
+    border-right: 2px solid gray;
+}
+.input_search{
+    padding: 5px;
+    width: 65%;
+    border: 0ch;
+    
+}
+ .inputs,.location_icon,.search_icon{
+    color: rgb(210, 74, 131);
+    background: white;
+    outline: 0px;
+}
+
+.search_icon{
+    color: rgb(74, 71, 71);
+} 
+
+
+/*  -----   we offer-section  ----- */
+
+.container{
+    margin: 3rem auto;
+    width: 95%;
+}
+
+.we_offer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.we_offer_card{
+    width: 18rem;
+    height: 17rem;
+    background: white;
+    padding: .5rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 1s ease;
+    border: 1px solid rgb(217, 211, 211);
+
+}
+
+.we_offer_card:hover{
+    transition: all 0.8s ease;
+    transform: scale(1.03);
+    box-shadow: 5px 5px 10px #575454;
+    cursor: pointer;
+    border: 1px solid rgb(132, 127, 127);
+    /* background: yellowgreen; */
+    
+
+}
+
+.we_offer_card img{
+    width: 15rem;
+    object-position: center;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+    border-radius: 8px;
+}
+
+.collections{
+    font-weight: 500;
+}
+.sub_head_container{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .8rem;
+}
+.sub_head_container span:last-child{
+    color: #ff7e8b;
+    cursor: pointer;
+    font-size: 13px;
+}
+.collections_card_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+.collections_card_container .card{
+    height: 300px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;  
+}
+.card1{
+    background: url("./images/collection1.jpg");
+}
+.card2{
+    background: url("./images/collection2.jpg");
+}
+.card3{
+    background: url("./images/collection3.jpg");
+}
+.card4{
+    background: url("./images/collection4.jpg");
+}
+
+.card .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 12px 16px;
+    font-size: .8rem;
+}
+
+.overlay{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.948),rgba(0, 0, 0, 0.679),rgba(0, 0, 0, 0.241))
+}
+.overlay:hover{
+    background: rgba(239, 177, 95, 0.126);
+}
+
+
+.get_the_app{
+    margin: 0ch;
+    width: 100%;
+    margin-top: 10rem;
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    background: #f8c9c952;
+   
+}
+.get_the_app .right{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.get_the_app .right h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: rgb(28, 28, 28);
+}
+.get_the_app .right h3{
+    font-weight: 300;
+    color: rgb(28, 28, 28);
+    font-size: 16px;
+}
+.get_the_app .right p{
+    color: #878585;
+    font-weight: 300;
+}
+.get_the_app .left img{
+    width: 19rem;
+}
+.download_from{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.download_from img{
+    width: 9rem;
+    cursor:url("./images/cursor.png"),pointer;
+}
+.buttons_container{
+    display: flex;
+    gap: 3rem;
+    font-size: 1rem;
+    font-weight: 300;
+
+}
+.buttons_container input{
+    height: 15px;
+    width: 20px;
+    
+}
+.input_field{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.input_field .share{
+    background: #e94757;
+    border-radius: 5px;
+    color: white;
+    width: auto;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 320;
+}
+.input_field .share:hover{
+    background: #ff3045;
+    cursor: pointer;
+
+}
+.input_field .email{
+    border: 1px solid rgb(172, 161, 161);
+    border-radius: .6rem;
+    padding: 1rem;
+    font-size: 17px;
+}
+
+
+
+.footer{
+    padding:0rem 15%;
+}
+.footer_section1 > img{
+    width: 9rem;
+}
+.footer_section1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.footer .navigation_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer .link_container img{
+    width: 8rem;
+    cursor: pointer;
+}
+.footer .link_container a{
+    text-decoration: none;
+    color: #878585;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: .4rem;
+    word-spacing: 3px;
+    
+}
+.footer .link_container a:hover{
+    color: #202020;
+}
+.footer .link_container h5{
+    font-weight: 420;
+    letter-spacing: 2px;
+    margin-bottom: .6rem;
+    font-size: 14px;
+}
+.footer .link_container{
+    display: flex;
+    flex-direction: column;
+}
+.footer .section1_button_container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+}
+.footer .section1_button_container button{
+    border: 1px solid gray;
+    padding: .5rem 0rem;
+    width: 7.6rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .section1_button_container .mini_globe , .indian_flag{
+    width: 22px;
+    height: 19px;
+    margin-right: 8px;
+}
+.footer_social_links{
+    gap: .5rem;
+}
+.footer_social_links .social_icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+}
+.footer_social_links .social_icons i{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 5px solid black;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+
+}
+
+.desclimer{
+    color: #878585;
+    font-size: 14px;
+    font-weight: 300;
+}
+/* ####################################################
+################[      PHONE      ]##################
+################################################# */
+
+@media screen and (max-width:750px){
+    .user_icon{
+        display: flex;
+    }
+    .link{
+        display: none;
+    }
+    .hero_section{
+        max-height: 80vh;
+    }
+    .navbar{
+        justify-content: space-between;
+        padding: .7rem;
+    }
+    
+    .hero_input_continer{
+        display: grid;
+        grid-template-columns: 1rem 1fr;
+        grid-template-rows: 1rem 1fr;
+        text-align: center;
+        background: white;
+        gap: 10px;
+    }
+    .input_location{
+        border: 0ch;
+        width: 100%;
+    }
+    .input_search{
+        width: 100%;
+        border-top: 2px solid gray;
+    }
+    .get_the_app .left{
+        display: none;
+    }
+    .footer .footer_social_links{
+        display: none;
+    }
+    .footer .section1_button_container button{
+        width: auto;
+        padding: 8px;
+    }
+}
+
